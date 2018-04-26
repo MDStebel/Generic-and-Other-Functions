@@ -26,9 +26,8 @@ func binarySearch<T: Comparable>(a: [T], key: T, range: Range<Int>) -> Int? {
 }
 
 
-// Test it
-// Initialize an array of integers
-let numbers = (1...1000000).map {$0}
+// Test examples
+let numbers = (1...1000000).map {$0}    // Initialize an array of integers
 let averageInterations = Int(log2(Double(numbers.last!)))
 
 if let found = binarySearch(a: numbers, key: 16, range: 0..<numbers.count) {
