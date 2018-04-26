@@ -27,8 +27,8 @@ func flatten<T: Comparable>(nested array: [Any]) -> [T] {
 }
 
 // Test examples
-var result: [Int] = flatten(nested: [1, [2, -55], 3]).sorted()
-print("Result:", result)
+var resultInt: [Int] = flatten(nested: [1, [2, -55], 3]).sorted()
+print("Result:", resultInt)
 var resultString: [String] = flatten(nested: ["Hi", ["There", ["Michael", "David"], "Stebel"]])
 print("Result:", resultString)
 var resultDouble: [Double] = flatten(nested: [2.1, Double.pi, [Double.pi / 2.0, -33.33]])
