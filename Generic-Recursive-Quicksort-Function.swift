@@ -16,6 +16,6 @@ func quickSort<T: Comparable>(_ array: [T]) -> [T] {
 }
 
 
-// Examples
+// Test examples
 print(quickSort([3, 1, 7, 9, 4, 2, 8]))
 print(quickSort(["goat", "arm", "toe", "dog", "bat"]))
