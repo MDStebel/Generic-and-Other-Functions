@@ -1,19 +1,29 @@
-/* 
-   Generic stack implementation. Shows generics
-   and mutating functions in Swift.
-*/
+// Generic stack implementation.
 
-struct Stack<E> {
-    var items = [E]()
-    
-    mutating func push(item: E) {
-        items.append(item)
-    }
-    
-    mutating func pop() -> E {
-        return items.removeLast()
-    }
+public struct Stack<T> {
+  fileprivate var array = [T]()
+
+  public var count: Int {
+    return array.count
+  }
+
+  public var isEmpty: Bool {
+    return array.isEmpty
+  }
+
+  public mutating func push(_ element: T) {
+    array.append(element)
+  }
+
+  public mutating func pop() -> T? {
+    return array.popLast()
+  }
+
+  public var top: T? {
+    return array.last
+  }
 }
+
 
 // Test examples
 var stackInts = Stack<Int>()
