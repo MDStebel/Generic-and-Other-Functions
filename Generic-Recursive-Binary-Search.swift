@@ -1,5 +1,6 @@
 import Foundation
 
+/// Generic binary search. Works with any type that conforms to the Comparable protocol
 func binarySearch<T: Comparable>(in collection: [T], for key: T, range: Range<Int>) -> Int? {
     if range.lowerBound >= range.upperBound {
         // If we get here, then the search key is not present in the array.
