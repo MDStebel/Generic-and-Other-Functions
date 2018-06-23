@@ -1,8 +1,8 @@
 /* 
-    A generic quicksort function. Shows how to use generics,
-    recursion, and functional extensions in Swift.
+    A generic quicksort function.
 */
 
+/// Generic quicksort takes any type that conforms to the Comparable protocol
 func quickSort<T: Comparable>(_ array: [T]) -> [T] {
     if array.isEmpty {
         return array
@@ -18,4 +18,4 @@ func quickSort<T: Comparable>(_ array: [T]) -> [T] {
 
 // Test examples
 print(quickSort([3, 1, 7, 9, 4, 2, 8]))
-print(quickSort(["goat", "arm", "toe", "dog", "bat"]))
+print(quickSort(["goat", "arm", "toe", "dog", "bat", "Michael"]))
