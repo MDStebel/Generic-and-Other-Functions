@@ -1,5 +1,6 @@
 // Generic stack implementation.
 
+/// Just a simple generic stack. Works with data of any type
 public struct Stack<T> {
   fileprivate var array = [T]()
 
