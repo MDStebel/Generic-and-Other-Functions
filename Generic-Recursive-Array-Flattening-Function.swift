@@ -11,6 +11,7 @@ import UIKit
 // ["Hi", ["There", ["Michael", "David"], "Stebel"]] -> ["Hi", "There", "Michael", "David", "Stebel"]
 // [2.1, Double.pi, [Double.pi / 2.0, -33.33]] -> [2.1000000000000001, 3.1415926535897931, 1.5707963267948966, -33.329999999999998]
 
+/// Generic array flattening function. Takes an array of any type that conforms to the Comparable protocol
 func flatten<T: Comparable>(nested array: [Any]) -> [T] {
     var myFlattenedArray = [T]()
     for element in array {
