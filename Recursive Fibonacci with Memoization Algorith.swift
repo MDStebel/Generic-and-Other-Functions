@@ -9,10 +9,10 @@ import Foundation
 
 /// Using caching algorithm called Memoization
 func fibonacci(ofOrder a: Int) -> Int64? {
+    let max = 92
+    guard (0...max ~= a) && a >= 0 else { return nil } // Using pattern matching operator to check range of a
     
-    guard (0...92 ~= a) && a >= 0 else { return nil } // Using pattern matching operator to check range of a
-    
-    var cachedFibs = [Int64](repeating: 0, count: 1000)
+    var cachedFibs = [Int64](repeating: 0, count: max+1)
     
     func recursiveFib(ofOrder a: Int) -> Int64 {
         var value: Int64 = 0
