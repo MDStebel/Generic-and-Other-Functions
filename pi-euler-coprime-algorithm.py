@@ -17,7 +17,7 @@ for i in range(n):
     rnd_number = random.randint(1, n)
     randoms.append(rnd_number)
 
-# The probability that two random numbers are co-prime is equal to 6/pi^2
+# The probability that two random numbers are co-prime converges to 6/pi^2 as n -> infinity.
 total_count: int = 0
 coprimes: int = 1
 index: int = 1
