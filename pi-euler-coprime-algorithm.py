@@ -1,8 +1,10 @@
+# By Michael Stebel using the Riemann Zeta Function
 import random
 import math
 from functools import cache
 
 @cache
+
 # Recursive greatest common divisor function
 def gcd(a: int, b: int) -> int:
     if b == 0:
@@ -11,13 +13,14 @@ def gcd(a: int, b: int) -> int:
         return gcd(b, a % b)
 
 # Create an array of integers and fill it with n random integers
-n = 10000000
+# Lots of iterations are needed to converge to pi!
+n = 100000000
 randoms = [int]
 for i in range(n):
     rnd_number = random.randint(1, n)
     randoms.append(rnd_number)
 
-# The probability that two random numbers are co-prime converges to 6/pi^2 as n -> infinity.
+# The probability that two random numbers are co-prime converges to 6/pi^2 as n -> infinity
 total_count: int = 0
 coprimes: int = 1
 index: int = 1
