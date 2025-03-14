@@ -1,4 +1,4 @@
-# By Michael Stebel using Euler's method and the Rieman Zeta Function
+# By Michael Stebel using Euler's method and the Riemann Zeta Function
 import random
 import math
 from functools import cache
@@ -13,7 +13,7 @@ def gcd(a: int, b: int) -> int:
         return gcd(b, a % b)
 
 # Create an array of integers and fill it with n random integers
-# Lots of iterations are needed to converge to pi
+# Lots of iterations are needed to converge to pi!
 n = 100000000
 randoms = [int]
 for i in range(n):
